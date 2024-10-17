@@ -1,0 +1,14 @@
+package test.string1;
+
+
+public class String1 {
+
+   
+    public static void main(String[] args) {
+String[] astronauts={"Sunita","William","Neil","Armstrong"};
+    
+for(int i=0; i<astronauts.length;i++){
+    System.out.println(astronauts[i]);
+}
+    }
+}
