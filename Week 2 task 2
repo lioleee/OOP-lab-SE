@@ -1,0 +1,22 @@
+package area_;
+
+public class Area_ {
+
+    float length;
+    float width;
+   
+    
+    void printArea(float length,float width){
+         float area=length*width;
+        System.out.println("Area:"+area);
+        
+    }
+    public static void main(String[] args) {
+      Area_ a1=new Area_();
+      a1.length= 31;
+      a1.width=32;
+     a1.printArea(30, 40);
+      
+    }
+     
+}
