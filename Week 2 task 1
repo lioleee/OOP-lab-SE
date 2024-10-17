@@ -1,0 +1,28 @@
+package student;
+public class Student {
+
+  String name;
+  int age;
+  String city;
+  void printinfo(){
+      System.out.println("Name:"+name);
+      System.out.println("Age:"+age);
+      System.out.println("City:"+city);
+
+
+      
+  }
+    public static void main(String[] args) {
+       Student s1=new Student();
+       Student s2= new Student();
+       s1.name="Barcelona";
+       s1.city="New York";
+       s1.age=21;
+       s2.name="Barcelona";
+       s2.city="Melbourne";
+       s2.age=33;
+       s1.printinfo();
+       s2.printinfo();
+       
+
+    }
