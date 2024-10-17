@@ -1,0 +1,81 @@
+package computor;
+public class Computor {
+CPU cpu;
+Ram ram;
+Harddrive hd;
+Computor(CPU cpu,Ram ram,Harddrive hd)
+{
+this.cpu=cpu;
+this.ram=ram;
+this.hd=hd;
+}
+void display()
+        {
+            System.out.println("Different componants of the Computers:");
+            cpu.display();
+            ram.display();
+            hd.display();
+        }
+    
+    public static void main(String[] args) {
+      CPU cpu=new CPU("INTEL CORE","3.6GHz");
+      Ram ram=new Ram("Kingston",128GB");
+      Harddrive hd=new Harddrive("SSD","2TB");
+      Computor c=new Computor(cpu,ram,hd);
+      c.display();
+    }
+    
+} package computor;
+
+public class CPU {
+    String brand;
+    String Capacity;
+    CPU(String brand,String Capacity)
+    {
+        this.brand=brand;
+        this.Capacity=Capacity;
+    }
+    void display()
+    {
+    System.out.println("The CPU brand is "+brand);
+    System.out.println("The CPU Capacity is "+Capacity);
+    }
+    
+}
+package computor;
+public class Ram {
+    String brand;
+    String Capacity;
+    Ram(String brand,String Capacity)
+    {
+        this.brand=brand;
+        this.Capacity=Capacity;
+    }
+    void display()
+    {
+    System.out.println("The Ram brand is "+brand);
+    System.out.println("The Ram Capacity is "+Capacity);
+    }
+    
+    
+
+}
+
+package computor;
+public class Harddrive {
+    String brand;
+    String Capacity;
+    Harddrive(String brand,String Capacity)
+    {
+        this.brand=brand; 
+
+        this.Capacity=Capacity;
+    }
+    void display()
+    {
+    System.out.println("The Hard-Drive brand is "+brand);
+    System.out.println("The Hard-Drive Capacity is "+Capacity);
+    }
+    
+    
+}
