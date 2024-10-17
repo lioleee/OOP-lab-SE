@@ -1,0 +1,21 @@
+package test.evenodd;
+
+
+public class Evenodd {
+
+    public static void main(String[] args) {
+int i=9;
+int j=12;
+if(i%2==0){
+System.out.println("i is even"+"  "+i);    
+}
+else{
+    System.out.println("i is odd"+"  "+i);
+}
+    if(j%2==0){
+        System.out.println("j is even"+" "+j);
+    }
+    else{
+        System.out.println("j is odd"+" "+j);
+    }}
+}
