@@ -1,0 +1,41 @@
+#include <iostream>
+#include<string>
+using namespace std;
+class laptop{
+	public:
+		string brand;
+		double model;
+		string SN;
+		double price;
+		int processorspeed;
+		int RAM;
+		int screensize;
+		void displayinfo(){
+			cout<<"brand "<<brand<<endl<<"Model No: "<<model<<endl<<"Serial Number "<<SN<<endl<<"Price: "<<price<<endl<<"processor speed:  /Hz "<<processorspeed<<endl<<"RAM:   GB"<<RAM<<endl<<"Screen Size: "<<screensize;
+			
+		}
+	};
+	int main()
+{
+	laptop l[2];
+	l[0].brand=" HP";
+	l[1].brand="lenovo";
+	l[0].model=2023;
+	l[1].model=2024;
+	l[0].SN=" LWBHRTYR67";
+	l[1].SN="BKWRETYT67";
+	l[0].price= 29000;
+	l[1].price=780000;
+	l[0].processorspeed=120;
+	l[1].processorspeed=200;
+    l[0].RAM=8;
+    l[1].RAM=8;
+    l[0].screensize= 14;
+    l[1].screensize= 16;
+    for(int i=0;i<2;i++){
+    	    l[i].displayinfo();
+			cout<<endl;
+
+	}
+    return 0;
+}
