@@ -1,0 +1,26 @@
+package computer;
+
+public class Computer {
+
+    String name;
+    String config;
+    String Os;
+    double cost;
+    void displayDetails(){
+        System.out.println( name);
+                System.out.println( config);
+                        System.out.println("The cost is:"+cost);
+                                System.out.println( Os);
+
+
+
+    }
+    public static void main(String[] args) {
+        Computer c=new Computer();
+        c.name="The company name is Apple";
+        c.config="The configuration is i5";
+        c.cost=5000;
+        c.Os="The operating system is Ios";
+        c.displayDetails();
+    }
+    
