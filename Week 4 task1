@@ -1,0 +1,39 @@
+package movie;
+
+
+public class Movie {
+private String title;
+    private String director;
+    private int releaseYear;
+    public String getTitle() {
+        return title;
+    }
+    public void setTitle(String title) {
+        this.title = title;
+    }
+     public String getDirector() {
+        return director;
+    }
+     public void setDirector(String director) {
+        this.director = director;
+    }
+public int getReleaseYear() {
+        return releaseYear;
+    }
+public void setReleaseYear(int releaseYear) {
+        this.releaseYear = releaseYear;
+    }
+    public static void main(String[] args) {
+       Movie myMovie = new Movie();
+
+        
+        myMovie.setTitle("12 days in space");
+        myMovie.setDirector("Christopher Nolan");
+        myMovie.setReleaseYear(2019);
+
+       
+        System.out.println("Movie Title: " + myMovie.getTitle());
+        System.out.println("Director: " + myMovie.getDirector());
+        System.out.println("Release Year: " + myMovie.getReleaseYear());
+    }
+}
