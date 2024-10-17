@@ -1,0 +1,58 @@
+package appliance;
+
+
+public class Appliance {
+ private String brand;
+    private String model;
+    private int powerConsumption;
+    
+    public Appliance(String brand, String model, int powerConsumption) {
+        this.brand = brand;
+        this.model = model;
+        this.powerConsumption = powerConsumption;
+    }
+    
+    public String getBrand() {
+        return brand;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public int getPowerConsumption() {
+        return powerConsumption;
+    }
+
+public static void main(String[] args) {
+        
+        refrigenerator myFridge = new refrigenerator("Dawlance", "123dfhh4", 500, 48);
+        
+        
+        System.out.println("Brand: " + myFridge.getBrand());
+        System.out.println("Model: " + myFridge.getModel());
+        System.out.println("Power Consumption: " + myFridge.getPowerConsumption() + " W");
+        System.out.println("Capacity: " + myFridge.getcapacity() + " cu ft");
+    }
+}
+package appliance;
+
+
+public class refrigenerator extends Appliance {
+    private int capacity;
+
+    
+    public refrigenerator(String brand, String model, int powerConsumption, int capacity) {
+        super(brand, model, powerConsumption); // Call the superclass constructor
+        this.capacity = capacity;
+    }
+    
+
+public int getcapacity() {
+        return capacity;
+    }
+
+    public void setcapacity(int capacity) {
+        this.capacity = capacity;
+}
+}
