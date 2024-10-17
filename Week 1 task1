@@ -1,0 +1,20 @@
+#include <iostream>
+#include<string>
+using namespace std;
+class employee{
+public:
+string name;
+string jobtitle;
+double salary;
+void displayinfo() {
+	cout<<"Name: "<<name<<endl<<"Jobtitle: "<<endl<<jobtitle<<"Salary: "<<salary;
+}	
+};
+int main(){
+	employee e;
+e.name="Rosey";
+e.jobtitle="Marketing manager";
+e.salary= 59000;
+	e.displayinfo();
+	return 0;
+}
